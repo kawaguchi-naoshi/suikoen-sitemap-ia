@@ -125,8 +125,8 @@
 
   .nav-grid{
     display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap:16px;
+    grid-template-columns:repeat(8, 1fr);
+    gap:12px;
     margin-top:20px;
   }
   .card{
@@ -140,12 +140,12 @@
   .card.indigo{border-color:var(--indigo);border-top:3px solid var(--indigo)}
   .card.persimmon{border-color:var(--persimmon);border-top:3px solid var(--persimmon)}
   .card .name{
-    font-size:14.5px;
+    font-size:13px;
     font-weight:700;
-    margin-bottom:4px;
+    margin-bottom:3px;
   }
   .card .desc{
-    font-size:12px;
+    font-size:11px;
     color:var(--muted);
   }
   .tag{
@@ -287,6 +287,9 @@
       <div class="name">TOP ページ</div>
       <div class="desc">ファーストビュー・お知らせ・ご予約への入口</div>
     </div>
+    <div style="text-align:center;margin:16px 0 20px;font-size:12px;color:var(--muted)">
+      ※ヘッダーには常時 <strong>「宿泊プラン・ご予約」へのボタン</strong> を配置
+    </div>
     <div class="connector"></div>
     <div class="hline"></div>
 
@@ -339,9 +342,9 @@
         <div class="children-line"></div>
         <div class="children-hline"></div>
         <div class="children-list">
-          <div class="child-card">夢の吊橋 完全ガイド</div>
-          <div class="child-card">モデルコース（晴れの日）</div>
-          <div class="child-card">モデルコース（雨の日）</div>
+          <div class="child-card">夢の吊橋 完全ガイド <span class="tag new" style="margin-left:4px">新規</span></div>
+          <div class="child-card">モデルコース（晴れの日） <span class="tag new" style="margin-left:4px">新規</span></div>
+          <div class="child-card">モデルコース（雨の日） <span class="tag new" style="margin-left:4px">新規</span></div>
         </div>
       </div>
     </div>
@@ -350,13 +353,9 @@
 
   <section>
     <div class="sec-label">フッターからご覧いただけるページ</div>
-    <div class="footer-grid">
+    <div class="footer-grid" style="grid-template-columns:repeat(3, 1fr)">
       <div class="footer-card">
         よくある質問
-      </div>
-      <div class="footer-card">
-        宿泊プラン・ご予約
-        <div class="desc">予約システムへ移動します</div>
       </div>
       <div class="footer-card">
         お知らせ
@@ -371,6 +370,8 @@
   <div class="notes">
     <h2>現在のサイトからの主な変更点</h2>
     <ul>
+      <li class="merge">グローバルナビは8項目を1段で表示（見やすさ重視）。</li>
+      <li class="merge">「宿泊プラン・ご予約」はヘッダーの常時CTAボタンに配置し、常にアクセス可能に。</li>
       <li class="merge">「貸切風呂」は独立ページにせず、「温泉」ページの中でご案内します。</li>
       <li class="merge">「ランチのみ」「入浴のみ」は、新設の「日帰り利用」ページにまとめてご案内します。</li>
       <li class="merge">「翠紅苑の魅力」と「川根茶の魅力」は、「宿の魅力」1ページに統合します。</li>
